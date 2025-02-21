@@ -1,7 +1,11 @@
 import Automate from "./(section)/Automate";
 import AutomateRes from "./(section)/AutomateRes";
+import Contact from "./(section)/Contact";
 import Empowering from "./(section)/Empowering";
 import MobileApp from "./(section)/MobileApp";
+import Review from "./(section)/Review";
+import ReviewRes from "./(section)/ReviewRes";
+import ImageSlider from "./(section)/sample";
 import SmartHome from "./(section)/SmartHome";
 import WeOffer from "./(section)/WeOffer";
 import Working from "./(section)/Working";
@@ -20,7 +24,14 @@ export default function Home() {
 				<AutomateRes />
 			</div>
 			<Empowering />
-
+			<div className="hidden md:block md:w-full">
+				<Review />
+			</div>
+			<div className="md:hidden overflow-x-hidden">
+				<ReviewRes />
+			</div>
+			<Contact />
+			{/* <ImageSlider /> */}
 			{/*
 			 */}
 		</div>
