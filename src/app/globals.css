@@ -164,3 +164,62 @@
     @apply bg-background text-foreground;
   }
 }
+
+.flashit {
+  -webkit-animation: flash ease-out 25s infinite;
+  -moz-animation: flash ease-out 20s infinite;
+  animation: flash ease-out 3s infinite;
+  animation-delay: 7s;
+}
+
+@-webkit-keyframes flash {
+  from {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  93% {
+    opacity: 0.6;
+  }
+
+  94% {
+    opacity: 0.2;
+  }
+
+  96% {
+    opacity: 0.9;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  93% {
+    opacity: 0.6;
+  }
+
+  94% {
+    opacity: 0.2;
+  }
+
+  96% {
+    opacity: 0.9;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
