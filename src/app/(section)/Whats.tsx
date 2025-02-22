@@ -5,7 +5,7 @@ import React from "react";
 
 const Whats: React.FC = () => {
 	return (
-		<section className="bg-[#F9F7FA] w-full h-full py-12 md:py-20 px-8 md:px-[50px] lg:px-[80px] 2xl:px-[140px]">
+		<section className="bg-[#F9F7FA] w-full h-full py-12 md:py-20 px-8 md:px-[50px] lg:px-[80px] 2xl:px-[160px]">
 			<div className="flex flex-col gap-6 md:gap-8">
 				<div className="flex flex-col gap-2 md:gap-4">
 					<h2 className="text-center text-[#4B3274] font-inter font-[700] text-3xl md:text-5xl ">
@@ -17,14 +17,15 @@ const Whats: React.FC = () => {
 						Stay Updated with Opus
 					</h6>
 				</div>
-				<div className="flex flex-row gap-5 md:justify-center">
-					<div className="flex flex-col items-center  gap-2  md:gap-4">
-						<div className="flex flex-col gap-2 md:gap-4">
+				<div className="flex flex-row gap-5 w-full md:justify-between">
+					<div className="flex w-full md:w-[33%] flex-col items-center  gap-2  md:gap-4">
+						<div className=" flex flex-col gap-2 md:gap-4">
 							<Image
 								src={"/images/home/whats/image.png"}
 								width={320}
 								height={249}
 								alt="image"
+								className="md:w-full"
 							/>
 							<div className="flex pt-2 flex-row gap-6">
 								<span className="text-center text-[#4B3274] font-inter font-[400] text-sm  ">
@@ -58,13 +59,14 @@ const Whats: React.FC = () => {
 							</div>
 						</div>
 					</div>
-					<div className="hidden md:flex flex-col items-center  gap-2  md:gap-4">
+					<div className="hidden w-full md:w-[33%] md:flex flex-col items-center  gap-2  md:gap-4">
 						<div className="flex flex-col gap-2 md:gap-4">
 							<Image
 								src={"/images/home/whats/image.png"}
 								width={320}
 								height={249}
 								alt="image"
+								className="md:w-full"
 							/>
 							<div className="flex flex-row pt-2  gap-6">
 								<span className="text-center text-[#4B3274] font-inter font-[400] text-sm  ">
@@ -98,13 +100,14 @@ const Whats: React.FC = () => {
 							</div>
 						</div>
 					</div>
-					<div className="hidden md:flex flex-col items-center  gap-2  md:gap-4">
+					<div className="hidden w-full md:w-[33%] md:flex flex-col items-center  gap-2  md:gap-4">
 						<div className="flex flex-col gap-2 md:gap-4">
 							<Image
 								src={"/images/home/whats/image.png"}
 								width={320}
 								height={249}
 								alt="image"
+								className="md:w-full"
 							/>
 							<div className="flex flex-row pt-2 gap-6">
 								<span className="text-center text-[#4B3274] font-inter font-[400] text-sm  ">
