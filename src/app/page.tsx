@@ -13,11 +13,17 @@ import WeOffer from "./(section)/WeOffer";
 import Working from "./(section)/Working";
 import Whats from "./(section)/Whats";
 import Built from "./(section)/Built";
+import TrustedPartnerRes from "./(section)/TrustedPartnerRes";
 
 export default function Home() {
 	return (
 		<div className="w-full h-full flex flex-col justify-center items-center">
-			<TrustedPartner />
+			<div className="hidden md:block md:w-full">
+				<TrustedPartner />
+			</div>
+			<div className="block md:hidden md:w-full">
+				<TrustedPartnerRes />
+			</div>
 			<WeOffer />
 			<Working />
 			<SmartHome />
