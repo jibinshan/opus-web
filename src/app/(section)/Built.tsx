@@ -3,7 +3,7 @@ import React from "react";
 
 const Built: React.FC = () => {
 	return (
-		<section className=" w-full h-full px-4 md:px-50 py-6 md:py-12 bg-[#f9f7fa] ">
+		<section className=" w-full h-full px-2 md:px-50 py-6 md:py-12 bg-[#f9f7fa] ">
 			<div className="flex relative flex-col gap-6 md:gap-14 bg-[#09060E]  pt-6 pb-0 md:pt-12 md:pb-12 border rounded-4xl ">
 				<div className="hidden md:block absolute top-14 right-16">
 					<div className="relative">
@@ -82,7 +82,7 @@ const Built: React.FC = () => {
 						alt="bg"
 					/>
 				</div>
-				<div className="flex flex-col px-8 md:px-10 gap-5">
+				<div className="flex flex-col px-6 md:px-10 gap-5">
 					<div className="flex flex-col items-center md:flex-row gap-2">
 						<Image
 							src={"/images/home/built/lock.png"}
@@ -97,7 +97,7 @@ const Built: React.FC = () => {
 							Built with Privacy <br /> in Mind
 						</h3>
 					</div>
-					<p className="w-full font-inter max-w-[750px] font-[700] text-xs md:text-base md:tracking-[0.5px] text-[#ffff] ">
+					<p className="ml-2 md:ml-0 w-[290px] font-inter md:w-[750px] font-[700] text-xs md:text-base md:tracking-[0.5px] text-[#ffff] ">
 						At Opus RMT Systems, your privacy is our priority. We design our
 						systems to protect your data while delivering unparalleled
 						convenience and security.
@@ -108,7 +108,7 @@ const Built: React.FC = () => {
 						{" "}
 						Your personal information stays private, always.
 					</p>
-					<p className="w-[240px] md:w-full font-inter font-[600] text-xs md:text-sm text-[#ffff] ">
+					<p className="w-full font-inter font-[600] text-xs md:text-sm text-[#ffff] ">
 						{" "}
 						Focus on enjoying your smart home without worrying about data
 						misuse.

@@ -8,11 +8,11 @@ const Whats: React.FC = () => {
 		<section className="bg-[#F9F7FA] w-full h-full py-12 md:py-20 px-8 md:px-[50px] lg:px-[80px] 2xl:px-[140px]">
 			<div className="flex flex-col gap-6 md:gap-8">
 				<div className="flex flex-col gap-2 md:gap-4">
-					<h2 className="text-center text-[#4B3274] font-inter font-[700] text-4xl md:text-5xl ">
+					<h2 className="text-center text-[#4B3274] font-inter font-[700] text-3xl md:text-5xl ">
 						{" "}
 						Whatʼs New
 					</h2>
-					<h6 className="text-center text-[#4B3274] font-inter font-[400] text-base md:text-xl ">
+					<h6 className="text-center text-[#4B3274] font-inter font-[400] text-sm md:text-lg ">
 						{" "}
 						Stay Updated with Opus
 					</h6>
@@ -26,7 +26,7 @@ const Whats: React.FC = () => {
 								height={249}
 								alt="image"
 							/>
-							<div className="flex flex-row gap-3">
+							<div className="flex pt-2 flex-row gap-6">
 								<span className="text-center text-[#4B3274] font-inter font-[400] text-sm  ">
 									Oct 11,2022{" "}
 								</span>
@@ -66,7 +66,7 @@ const Whats: React.FC = () => {
 								height={249}
 								alt="image"
 							/>
-							<div className="flex flex-row gap-3">
+							<div className="flex flex-row pt-2  gap-6">
 								<span className="text-center text-[#4B3274] font-inter font-[400] text-sm  ">
 									Oct 11,2022{" "}
 								</span>
@@ -106,7 +106,7 @@ const Whats: React.FC = () => {
 								height={249}
 								alt="image"
 							/>
-							<div className="flex flex-row gap-3">
+							<div className="flex flex-row pt-2 gap-6">
 								<span className="text-center text-[#4B3274] font-inter font-[400] text-sm  ">
 									Oct 11,2022{" "}
 								</span>
