@@ -52,9 +52,10 @@ const Contact = ({ }) => {
                         width={471}
                         height={798}
                         alt="contact"
+                        className="h-[820px] object-cover rounded-2xl"
                     />
                 </div>
-                <div className="w-full md:w-2/3 px-5 md:px-12 pt-6 pb-8 flex flex-col justify-center items-center gap-7 md:gap-4">
+                <div className="w-full md:w-2/3 px-5 md:px-12 pt-6 pb-8 flex flex-col justify-center items-center gap-7 md:gap-12">
                     <div className="flex flex-col gap-2 justify-center items-center">
                         <p className="text-[#09060E] font-[600] font-inter text-3xl md:text-5xl text-center">Contact Us</p>
                         <p className="text-[#09060E] font-[600] font-inter text-base md:text-xl text-center">Weʼre Here to Help</p>
