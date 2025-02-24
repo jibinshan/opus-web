@@ -50,7 +50,7 @@ const Hero = ({ }) => {
             >
                 {rooms[room] &&
                     <div className="relative">
-                        < Image
+                        <Image
                             src={rooms[room]}
                             width={1360}
                             height={768}
