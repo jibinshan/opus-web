@@ -13,19 +13,11 @@ import WeOffer from "./(section)/WeOffer";
 import Working from "./(section)/Working";
 import Whats from "./(section)/Whats";
 import Built from "./(section)/Built";
-import TrustedPartnerRes from "./(section)/TrustedPartnerRes";
-import Hero from "./(section)/Hero";
 
 export default function Home() {
 	return (
 		<div className="w-full h-full flex flex-col justify-center items-center">
-			<Hero />
-			<div className="hidden md:block md:w-full">
-				<TrustedPartner />
-			</div>
-			<div className="block md:hidden md:w-full">
-				<TrustedPartnerRes />
-			</div>
+			<TrustedPartner />
 			<WeOffer />
 			<Working />
 			<SmartHome />
@@ -50,6 +42,6 @@ export default function Home() {
 			{/* <ImageSlider /> */}
 			{/*
 			 */}
-		</div >
+		</div>
 	);
 }
