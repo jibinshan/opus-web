@@ -16,10 +16,12 @@ import Built from "./(section)/Built";
 import TrustedPartnerRes from "./(section)/TrustedPartnerRes";
 import Hero from "./(section)/Hero";
 import HeroRes from "./(section)/HeroRes";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
 	return (
 		<div className="w-full h-full flex flex-col justify-center items-center">
+			<Navbar position="fixed" />
 			<div className="hidden md:block md:w-full">
 				<Hero />
 			</div>
@@ -56,6 +58,6 @@ export default function Home() {
 			{/* <ImageSlider /> */}
 			{/*
 			 */}
-		</div>
+		</div >
 	);
 }

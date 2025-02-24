@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-import { Button } from "@/components/ui/button";
-import { Sidebar } from "./ui/sidebar";
+import Sidebar from "./SideBar";
+import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
 
 interface NavbarProps {
 	position?: "static" | "fixed" | "absolute";
@@ -19,60 +19,60 @@ const Navbar: React.FC<NavbarProps> = ({ position = "static" }) => {
 					<div className="">
 						<Link href={"/"}>
 							<Image
-								src={"/images/home/navbar/logo.svg"}
-								width={228}
-								height={78}
+								src={"/images/home/navbar/logo.png"}
+								width={112}
+								height={38}
 								alt="logo"
-								className="w-24"
+								className="w-14 md:w-24"
 							/>
 						</Link>
 					</div>
 					<div className="hidden w-full flex-row  items-end justify-end gap-12 bg-transparent py-3 lg:flex">
 						<Link
-							className="text-center font-public_sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
+							className="text-center font-public.sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
 							href={"/"}
 						>
 							Home
 						</Link>
 						<Link
-							className="text-center font-public_sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
+							className="text-center font-public.sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
 							href={""}
 						>
 							About
 						</Link>
 
 						<Link
-							className="text-center font- text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
+							className="text-center font-public.sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
 							href={""}
 						>
 							How it Works
 						</Link>
 						<Link
-							className="text-center font-public_sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
+							className="text-center font-public.sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
 							href={""}
 						>
 							Blog
 						</Link>
 						<Link
-							className="text-center font-public_sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
+							className="text-center font-public.sans text-sm font-[500]  tracking-[0.96px] text-[#62381A]"
 							href={""}
 						>
 							Product
 						</Link>
 					</div>
 
-					{/* <div className="lg:hidden">
+					<div className="lg:hidden">
 						<Sidebar>
 							<Button
 								variant="ghost"
 								className="flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
 							>
 								<div className="flex flex-row gap-2">
-									<EqualizerIcon />
+									<Menu className="w-7 h-7" />
 								</div>
 							</Button>
 						</Sidebar>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</section>
@@ -80,13 +80,3 @@ const Navbar: React.FC<NavbarProps> = ({ position = "static" }) => {
 };
 
 export default Navbar;
-
-const EqualizerIcon: React.FC = () => {
-	return (
-		<div className="equalizer-icon rotate">
-			<div className="bar"></div>
-			<div className="bar"></div>
-			<div className="bar"></div>
-		</div>
-	);
-};

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Open_Sans } from "next/font/google";
+import { Inter, Open_Sans, Public_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +10,11 @@ const inter = Inter({
 
 const open_sans = Open_Sans({
 	variable: "--open_sans",
+	subsets: ["latin"],
+});
+
+const public_sans = Public_Sans({
+	variable: "--public_sans",
 	subsets: ["latin"],
 });
 
@@ -29,7 +34,8 @@ export default function RootLayout({
 				className={cn(
 					"min-h-screen bg-background font-manrope antialiased",
 					inter.variable,
-					open_sans.variable
+					open_sans.variable,
+					public_sans.variable
 				)}
 			>
 				{children}
