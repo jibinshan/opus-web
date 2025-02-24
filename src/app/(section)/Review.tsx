@@ -40,7 +40,7 @@ const reviews: reviewstype[] = [
 
 const Review = ({ }) => {
     return (
-        <section className="w-full h-fit flex flex-col gap-12 justify-center items-center px-4 md:px-[130px] py-24">
+        <section className="w-full h-fit flex flex-col gap-12 justify-center items-center px-4 md:px-[130px] py-12">
             <div className="w-full flex flex-col gap-2 justify-center items-center">
                 <p className="text-[#09060E] font-open.sans text-5xl font-[700]">What Our Customers Say</p>
                 <p className="text-[#09060E] font-open.sans text-lg">Discover what our satisfied customer have to say about their experiences with our products/services</p>

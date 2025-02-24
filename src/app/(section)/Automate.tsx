@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Automate = ({ }) => {
     return (
-        <section className="w-full h-full flex flex-col justify-center items-start px-[100px] py-24 gap-12">
+        <section className="w-full h-full flex flex-col justify-center items-start px-[100px] pt-16 pb-28 gap-12">
             <div className="w-full flex flex-col gap-3 justify-center items-center">
                 <p className="font-[800] text-5xl font-inter"
                     style={{

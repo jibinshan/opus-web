@@ -5,7 +5,7 @@ import React from "react";
 
 const Whats: React.FC = () => {
 	return (
-		<section className="bg-[#F9F7FA] w-full h-full py-12 md:py-20 px-8 md:px-[50px] lg:px-[80px] 2xl:px-[160px]">
+		<section className="bg-[#F9F7FA] w-full h-full py-12 md:py-12 px-8 md:px-[50px] lg:px-[80px] 2xl:px-[160px]">
 			<div className="flex flex-col gap-6 md:gap-8">
 				<div className="flex flex-col gap-2 md:gap-4">
 					<h2 className="text-center text-[#4B3274] font-inter font-[700] text-3xl md:text-5xl ">

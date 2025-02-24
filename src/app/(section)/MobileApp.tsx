@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const MobileApp = ({ }) => {
     return (
-        <section className="w-full flex h-fit py-12 md:py-24 px-4 md:px-[130px]">
+        <section className="w-full flex h-fit py-12 md:pt-16 md:pb-24 px-4 md:px-[130px]">
             <div className="relative w-full z-0">
                 <div className="absolute w-full h-full top-9 px-4">
                     <div className="w-full h-full bg-[#dccff6] rounded-3xl"></div>

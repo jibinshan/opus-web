@@ -36,14 +36,14 @@ export default function Home() {
 			</div>
 			<WeOffer />
 			<Working />
-			<SmartHome />
-			<MobileApp />
 			<div className="hidden md:block md:w-full">
 				<Automate />
 			</div>
 			<div className="block md:hidden md:w-full">
 				<AutomateRes />
 			</div>
+			<SmartHome />
+			<MobileApp />
 			<Empowering />
 			<Built />
 			<div className="hidden md:block md:w-full">

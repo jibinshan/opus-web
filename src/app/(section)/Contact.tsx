@@ -40,7 +40,7 @@ const Contact = ({ }) => {
     };
 
     return (
-        <section className="w-full h-fit flex justify-center items-center md:px-[100px] py-24">
+        <section className="w-full h-fit flex justify-center items-center md:px-[100px] pt-12 pb-0 md:pt-12 md:pb-12">
             <div className="w-full h-fit flex justify-center items-center md:border-[2px] md:border-[#b8b5b5] md:rounded-2xl"
                 style={{
                     background: "linear-gradient(180deg, #F9F7FA 47.1%, #E6B5FF 100%);",
