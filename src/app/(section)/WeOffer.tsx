@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const MotionImage = motion(Image);
 
-const WeOffer = ({}) => {
+const WeOffer = ({ }) => {
 	const text = "What We Offer";
 	const [hasMounted, setHasMounted] = useState(false);
 	useEffect(() => {
@@ -43,69 +43,201 @@ const WeOffer = ({}) => {
 			</div>
 			<div className="hidden w-full md:flex flex-col gap-4 justify-center items-center">
 				<div className="flex gap-4">
-					<MotionImage
-						src="/images/home/we-offer/a.png"
-						width={632}
-						height={300}
-						alt="we-offer"
-						className="md:col-span-2"
-						initial={{ x: -100, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
-						transition={{ duration: 1, ease: "easeOut" }}
-						viewport={{ once: false, amount: 0.2 }}
-					/>
-					<Image
-						src="/images/home/we-offer/b.png"
-						width={426}
-						height={300}
-						alt="we-offer"
-					/>
+					<div className="relative">
+						<Image
+							src="/images/home/we-offer/1.png"
+							width={1360}
+							height={768}
+							alt="we-offer"
+							className="md:col-span-2 rounded-3xl object-cover h-[400px]"
+						/>
+						<div className="absolute w-full h-[150px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+							style={{
+								background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+							}}
+						>
+							<p className="w-full text-center font-inter text-white font-[700] text-xl">AI Driven Home Automation</p>
+							<p className="w-full text-center text-white text-sm font-open.sans"
+								style={{
+									fontWeight: "200"
+								}}
+							>
+								Advanced systems that learn your habits and<br />
+								preferences to deliver unparalleled comfort and efficiency.
+							</p>
+						</div>
+					</div>
+					<div className="relative">
+						<Image
+							src="/images/home/we-offer/2.png"
+							width={1024}
+							height={1024}
+							alt="we-offer"
+							className="rounded-3xl h-[400px] object-cover"
+						/>
+						<div className="absolute w-full h-[150px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+							style={{
+								background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+							}}
+						>
+							<p className="w-full text-center font-inter text-white font-[700] text-xl"> Remote Control and Monitoring</p>
+							<p className="w-full text-center text-white text-sm font-open.sans"
+								style={{
+									fontWeight: "200"
+								}}
+							>
+								Manage your entire home with a touch,<br />
+								whether youʼre on the couch or across the globe.
+							</p>
+						</div>
+					</div>
 				</div>
 				<div className="flex gap-4">
-					<Image
-						src="/images/home/we-offer/c.png"
-						width={426}
-						height={300}
-						alt="we-offer"
-					/>
-					<Image
-						src="/images/home/we-offer/d.png"
-						width={632}
-						height={300}
-						alt="we-offer"
-						className="md:col-span-2"
-					/>
+					<div className="relative">
+						<Image
+							src="/images/home/we-offer/3.png"
+							width={1024}
+							height={1024}
+							alt="we-offer"
+							className="rounded-3xl h-[400px] object-cover"
+						/>
+						<div className="absolute w-full h-[150px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+							style={{
+								background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+							}}
+						>
+							<p className="w-full text-center font-inter text-white font-[700] text-xl">24/7 Support</p>
+							<p className="w-full text-center text-white text-sm font-open.sans"
+								style={{
+									fontWeight: "200"
+								}}
+							>
+								Our dedicated team is always ready to assist you<br /> in optimizing your smart home experience.
+							</p>
+						</div>
+					</div>
+					<div className="relative">
+						<Image
+							src="/images/home/we-offer/4.png"
+							width={1360}
+							height={768}
+							alt="we-offer"
+							className="md:col-span-2 rounded-3xl h-[400px] object-cover"
+						/>
+						<div className="absolute w-full h-[150px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+							style={{
+								background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+							}}
+						>
+							<p className="w-full text-center font-inter text-white font-[700] text-xl">Customized Solutions for Every Home</p>
+							<p className="w-full text-center text-white text-sm font-open.sans"
+								style={{
+									fontWeight: "200"
+								}}
+							>
+								From integrated smart lighting and<br />
+								climate control to home entertainment and beyond, we<br /> create tailored solutions for every need.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className="w-full flex flex-col gap-4 justify-center items-center md:hidden">
-				<Image
-					src="/images/home/we-offer/mobilea.png"
-					width={311}
-					height={218}
-					alt="we-offer"
-					className="w-full"
-				/>
-				<Image
-					src="/images/home/we-offer/mobileb.png"
-					width={311}
-					height={218}
-					alt="we-offer"
-					className="w-full"
-				/>
-				<Image
-					src="/images/home/we-offer/mobilec.png"
-					width={311}
-					height={218}
-					alt="we-offer"
-					className="w-full"
-				/>
-				<Image
-					src="/images/home/we-offer/mobiled.png"
-					width={311}
-					height={218}
-					alt="we-offer"
-					className="w-full"
-				/>
+				<div className="w-full relative">
+					<Image
+						src="/images/home/we-offer/3.png"
+						width={1024}
+						height={1024}
+						alt="we-offer"
+						className="rounded-3xl h-[200px] object-cover"
+					/>
+					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+						style={{
+							background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+						}}
+					>
+						<p className="w-full text-center font-inter text-white font-[700] text-base">24/7 Support</p>
+						<p className="w-full text-center text-white text-xs font-open.sans"
+							style={{
+								fontWeight: "200"
+							}}
+						>
+							Our dedicated team is always ready to assist you<br /> in optimizing your smart home experience.
+						</p>
+					</div>
+				</div>
+				<div className="w-full relative">
+					<Image
+						src="/images/home/we-offer/2.png"
+						width={1024}
+						height={1024}
+						alt="we-offer"
+						className="rounded-3xl h-[200px] object-cover"
+					/>
+					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+						style={{
+							background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+						}}
+					>
+						<p className="w-full text-center font-inter text-white font-[700] text-base"> Remote Control and Monitoring</p>
+						<p className="w-full text-center text-white text-xs font-open.sans"
+							style={{
+								fontWeight: "200"
+							}}
+						>
+							Manage your entire home with a touch,<br />
+							whether youʼre on the couch or across the globe.
+						</p>
+					</div>
+				</div>
+				<div className="w-full relative">
+					<Image
+						src="/images/home/we-offer/1.png"
+						width={1360}
+						height={768}
+						alt="we-offer"
+						className="rounded-3xl h-[200px] object-cover"
+					/>
+					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+						style={{
+							background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+						}}
+					>
+						<p className="w-full text-center font-inter text-white font-[700] text-base">AI Driven Home Automation</p>
+						<p className="w-full text-center text-white text-xs font-open.sans"
+							style={{
+								fontWeight: "200"
+							}}
+						>
+							Advanced systems that learn your habits and<br />
+							preferences to deliver unparalleled comfort and efficiency.
+						</p>
+					</div>
+				</div>
+				<div className="w-full relative">
+					<Image
+						src="/images/home/we-offer/4.png"
+						width={1360}
+						height={768}
+						alt="we-offer"
+						className="rounded-3xl h-[200px] object-cover"
+					/>
+					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
+						style={{
+							background: "linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 45.9%, rgba(0, 0, 0, 0.80) 100%)"
+						}}
+					>
+						<p className="w-full text-center font-inter text-white font-[700] text-base">Customized Solutions for Every Home</p>
+						<p className="w-full text-center text-white text-xs font-open.sans"
+							style={{
+								fontWeight: "200"
+							}}
+						>
+							From integrated smart lighting and<br />
+							climate control to home entertainment and beyond, we<br /> create tailored solutions for every need.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
