@@ -11,7 +11,7 @@ const WeOffer = ({ }) => {
 
 	if (!hasMounted) return null;
 	return (
-		<section className="w-full h-full flex flex-col gap-6 justify-start items-center py-12 md:py-16 px-4 md:px-[130px]">
+		<section className="w-full h-full flex flex-col gap-6 justify-start items-center py-12 md:py-16 px-7 md:px-[130px]">
 			<div className="w-full flex flex-col gap-2 justify-center items-center">
 				<p className="font-inter text-4xl md:text-5xl font-[800] text-[#09060E] flex gap-1">
 					What We Offer
@@ -129,7 +129,7 @@ const WeOffer = ({ }) => {
 						width={1024}
 						height={1024}
 						alt="we-offer"
-						className="rounded-3xl h-[200px] object-cover"
+						className="rounded-3xl h-[230px] object-cover"
 					/>
 					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
 						style={{
@@ -152,7 +152,7 @@ const WeOffer = ({ }) => {
 						width={1024}
 						height={1024}
 						alt="we-offer"
-						className="rounded-3xl h-[200px] object-cover"
+						className="rounded-3xl h-[230px] object-cover"
 					/>
 					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
 						style={{
@@ -176,7 +176,7 @@ const WeOffer = ({ }) => {
 						width={1360}
 						height={768}
 						alt="we-offer"
-						className="rounded-3xl h-[200px] object-cover"
+						className="rounded-3xl h-[230px] object-cover"
 					/>
 					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
 						style={{
@@ -200,7 +200,7 @@ const WeOffer = ({ }) => {
 						width={1360}
 						height={768}
 						alt="we-offer"
-						className="rounded-3xl h-[200px] object-cover"
+						className="rounded-3xl h-[230px] object-cover"
 					/>
 					<div className="absolute w-full h-[100px] left-0 bottom-0 flex flex-col justify-center items-center rounded-b-3xl gap-1"
 						style={{

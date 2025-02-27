@@ -12,9 +12,9 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ position = "static" }) => {
 	return (
 		<section
-			className={`${position} top-0 z-50 flex h-[10vh] w-full items-center px-4  transition-all duration-300 ease-in-out 2xl:px-[130px]  md:px-[80px]`}
+			className={`${position} -top-1 md:top-0 z-50 flex h-[10vh] w-full justify-center items-center px-4 transition-all duration-300 ease-in-out 2xl:px-[130px]  md:px-[80px]`}
 		>
-			<div className="flex bg-[#FFFFFF] w-full py-4 flex-col rounded-b-2xl lg:rouded-b-[50px] border border-[#E2E2E2] gap-0">
+			<div className="flex bg-[#FFFFFF] w-full py-4 flex-col rounded-b-2xl lg:rouded-b-[50px] border border-[#E2E2E2] gap-0 max-w-[1200px]">
 				<div className="flex w-full flex-row items-center justify-between px-4 md:px-8">
 					<div className="">
 						<Link href={"/"}>
@@ -63,19 +63,12 @@ const Navbar: React.FC<NavbarProps> = ({ position = "static" }) => {
 
 					<div className="lg:hidden">
 						<Sidebar>
-							<Button
-								variant="ghost"
-								className="flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
-							>
-								<div className="flex flex-row gap-2">
-									<Menu className="w-7 h-7" />
-								</div>
-							</Button>
+							<Menu className="w-7 h-7" />
 						</Sidebar>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section >
 	);
 };
 

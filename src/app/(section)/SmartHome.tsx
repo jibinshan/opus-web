@@ -10,7 +10,7 @@ const SmartHome = ({ }) => {
                 backgroundRepeat: 'no-repeat'
             }}
         >
-            <div className="w-full h-full md:w-2/5 flex flex-col md:flex-row gap-5 justify-center items-start pb-[100px]  pt-12 md:pb-12">
+            <div className="w-full h-full md:w-2/5 flex flex-col md:flex-row gap-5 justify-center items-start pb-[100px] pt-0 md:pt-12 md:pb-12">
                 <div className="block md:hidden w-full h-full px-6">
                     <p className="text-[#09060E] font-inter font-[800] text-2xl text-center">Why Choose Opus for Your Smart Home?</p>
                 </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Built: React.FC = () => {
 	return (
-		<section className=" w-full h-full px-2 md:px-50 py-6 md:py-12 bg-[#f9f7fa] ">
+		<section className=" w-full h-full px-4 md:px-50 py-6 md:py-12 bg-[#f9f7fa] ">
 			<div className="flex relative flex-col gap-6 md:gap-14 bg-[#09060E]  pt-6 pb-0 md:pt-12 md:pb-12 border rounded-4xl ">
 				<div className="hidden md:block absolute top-14 right-16">
 					<div className="relative">

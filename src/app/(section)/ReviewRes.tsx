@@ -53,7 +53,7 @@ const Review = ({ }) => {
     const arraylength = Math.ceil(reviews.length / 3)
     const reviewsPerSlide = 3;
     return (
-        <section className="w-full h-fit flex flex-col gap-12 justify-center items-center px-4 md:px-[130px] py-24">
+        <section className="w-full h-fit flex flex-col gap-12 justify-center items-center px-4 md:px-[130px] py-8">
             <div className="w-full flex flex-col gap-2 justify-center items-center">
                 <p className="font-open.sans text-4xl text-center font-[700]"
                     style={{

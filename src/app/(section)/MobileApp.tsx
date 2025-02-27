@@ -14,22 +14,22 @@ const MobileApp = ({ }) => {
                 <div className="relative w-full flex flex-col md:flex-row bg-[#000000] rounded-3xl gap-4 ">
                     <div className="w-full md:w-3/5 p-7 flex flex-col justify-start items-start gap-6 md:pb-12">
                         <div className="w-full flex flex-col gap-3 border-b-[1px] border-b-[#6b2fe4] pb-4">
-                            <p className="text-2xl md:text-5xl font-[800] capitalize text-white font-inter">The Opus Mobile App</p>
-                            <p className="text-white font-open.sans text-sm md:text-xl">All your home automation needs at your fingertips.</p>
+                            <p className="text-xl md:text-5xl font-[800] capitalize text-white font-inter">The Opus Mobile App</p>
+                            <p className="text-white font-open.sans text-xs md:text-xl">All your home automation needs at your fingertips.</p>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <p className="text-white font-open.sans text-sm md:text-xl">Effortlessly control and monitor devices.</p>
-                            <p className="text-sm md:text-lg text-white font-open.sans">Set schedules and create routines for a truly personalized experience.</p>
-                            <p className="text-sm md:text-lg text-white font-open.sans">Receive instant updates and alerts to stay informed.</p>
+                            <p className="text-white font-open.sans text-xs md:text-xl">Effortlessly control and monitor devices.</p>
+                            <p className="text-xs md:text-lg text-white font-open.sans">Set schedules and create routines for a truly personalized experience.</p>
+                            <p className="text-xs md:text-lg text-white font-open.sans">Receive instant updates and alerts to stay informed.</p>
                         </div>
-                        <div className="w-full flex justify-center md:justify-start items-center gap-4 px-6 md:px-0 pt-6 md:pt-0">
+                        <div className="w-full flex justify-center md:justify-start items-center gap-4 px-2 md:px-0 pt-4 md:pt-0">
                             <div className="flex justify-center items-center gap-2 bg-[#666666] border-[1px] border-[#FFF] px-6 py-3 rounded-lg">
                                 <Image
                                     src='/images/home/mobile-app/play-store.png'
                                     width={39}
                                     height={42}
                                     alt="play-store"
-                                    className="w-[28px] md:w-[39px]"
+                                    className="w-[39px]"
                                 />
                                 <div className="flex flex-col justify-start items-start gap-2">
                                     <Image
@@ -37,14 +37,14 @@ const MobileApp = ({ }) => {
                                         width={81}
                                         height={14}
                                         alt="play-store"
-                                        className="w-[60px] md:h-[12px] md:w-[78px]"
+                                        className="w-[65px] md:h-[12px] md:w-[78px]"
                                     />
                                     <Image
                                         src='/images/home/mobile-app/google-play.png'
                                         width={128}
                                         height={25}
                                         alt="play-store"
-                                        className="w-[80px] md:h-[20px] md:w-[115px]"
+                                        className="w-[90px] md:h-[20px] md:w-[115px]"
                                     />
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ const MobileApp = ({ }) => {
                                     width={33}
                                     height={40}
                                     alt="play-store"
-                                    className="w-[28px] md:w-[33px]"
+                                    className="w-[33px]"
                                 />
                                 <div className="flex flex-col justify-start items-start gap-2">
                                     <Image
@@ -62,14 +62,14 @@ const MobileApp = ({ }) => {
                                         width={121}
                                         height={12}
                                         alt="play-store"
-                                        className="w-[90px] md:h-[12px] md:w-[121px]"
+                                        className="w-[99px] md:h-[12px] md:w-[121px]"
                                     />
                                     <Image
                                         src='/images/home/mobile-app/app-store.png'
                                         width={122}
                                         height={28}
                                         alt="play-store"
-                                        className="w-[80px] md:h-[20px] md:w-[115px]"
+                                        className="w-[90px] md:h-[20px] md:w-[115px]"
                                     />
                                 </div>
                             </div>

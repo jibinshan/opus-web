@@ -23,8 +23,8 @@ const Hero = ({ }) => {
         }, 1000);
     }, [room])
     return (
-        <section className="w-full pt-24 px-[140px] flex flex-col gap-8">
-            <div className="w-full flex flex-col gap-2 justify-center items-center">
+        <section className="w-full pt-24 px-4 flex flex-col items-center justify-center gap-8">
+            <div className="w-full max-w-[1200px] flex flex-col gap-2 justify-center items-center">
                 <p className="text-black font-[800] font-inter text-4xl text-center">Seamless Living,</p>
                 <p className="text-black font-[800] font-inter text-5xl text-center">Smartly <span className="text-[#6B2FE4]">Automated</span></p>
                 <div className="w-full flex justify-center items-center gap-3 pt-4">
@@ -43,7 +43,7 @@ const Hero = ({ }) => {
                 </div>
             </div>
 
-            <div className="relative w-full pt-7 px-7 rounded-4xl flex justify-center items-center"
+            <div className="relative w-full max-w-[1200px] pt-7 px-7 rounded-4xl flex justify-center items-center"
                 style={{
                     background: "linear-gradient(180deg, rgba(164, 132, 227, 0.30) 0%, rgba(164, 132, 227, 0.00) 100%);"
                 }}
