@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -154,12 +156,29 @@ const Whats: React.FC = () => {
 					</Link>
 				</div>
 				<div className="hidden md:flex justify-center mt-4 items-center">
-					<Link
+					{/* <Link
 						className="text-[#6B2FE4] font-open.sans font-[400] text-base text-center flex flex-row gap-2 "
 						href={""}
 					>
 						Read more <ArrowRight />
-					</Link>
+					</Link> */}
+					<motion.div
+						initial={{ x: -10 }}
+						animate={{ x: 10 }}
+						transition={{
+							repeat: Infinity,
+							repeatType: "reverse",
+							duration: 1.5,
+							ease: "easeInOut",
+						}}
+					>
+						<Link
+							className="text-[#6B2FE4] font-open.sans font-[400] text-base text-center flex flex-row gap-2"
+							href={""}
+						>
+							Read more <ArrowRight />
+						</Link>
+					</motion.div>
 				</div>
 			</div>
 		</section>

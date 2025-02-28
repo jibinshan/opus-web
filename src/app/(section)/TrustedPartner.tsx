@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const MotionImage = motion(Image);
 
-const TrustedPartner = ({ }) => {
+const TrustedPartner = ({}) => {
 	const [isAnimating, setIsAnimating] = useState(true);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setIsAnimating((prev) => !prev);
-		}, 2000); // Restart animation every 2 seconds
+		}, 2000);
 
 		return () => clearInterval(interval);
 	}, []);
@@ -83,7 +83,7 @@ const TrustedPartner = ({ }) => {
 								className="rounded-2xl"
 								initial={{ scale: 0.5, opacity: 0 }}
 								whileInView={{ scale: 1, opacity: 1 }}
-								transition={{ duration: 0.8, ease: "easeOut" }}
+								transition={{ duration: 1.2, ease: "easeOut" }}
 								viewport={{ amount: 0.3 }}
 							/>
 						</div>
@@ -98,7 +98,7 @@ const TrustedPartner = ({ }) => {
 								className="rounded-2xl"
 								initial={{ scale: 0.5, opacity: 0 }}
 								whileInView={{ scale: 1, opacity: 1 }}
-								transition={{ duration: 0.8, ease: "easeOut" }}
+								transition={{ duration: 1.2, ease: "easeOut" }}
 								viewport={{ amount: 0.3 }}
 							/>
 						</div>
@@ -115,7 +115,7 @@ const TrustedPartner = ({ }) => {
 							className="rounded-2xl"
 							initial={{ scale: 0.5, opacity: 0 }}
 							whileInView={{ scale: 1, opacity: 1 }}
-							transition={{ duration: 0.8, ease: "easeOut" }}
+							transition={{ duration: 1.2, ease: "easeOut" }}
 							viewport={{ amount: 0.3 }}
 						/>
 					</div>
@@ -132,7 +132,7 @@ const TrustedPartner = ({ }) => {
 								className="rounded-2xl"
 								initial={{ scale: 0.5, opacity: 0 }}
 								whileInView={{ scale: 1, opacity: 1 }}
-								transition={{ duration: 0.8, ease: "easeOut" }}
+								transition={{ duration: 1.2, ease: "easeOut" }}
 								viewport={{ amount: 0.3 }}
 							/>
 						</div>
@@ -147,7 +147,7 @@ const TrustedPartner = ({ }) => {
 								className="rounded-2xl"
 								initial={{ scale: 0.5, opacity: 0 }}
 								whileInView={{ scale: 1, opacity: 1 }}
-								transition={{ duration: 0.8, ease: "easeOut" }}
+								transition={{ duration: 1.2, ease: "easeOut" }}
 								viewport={{ amount: 0.3 }}
 							/>
 						</div>

@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -6,7 +8,7 @@ const Built: React.FC = () => {
 		<section className=" w-full h-full px-4 md:px-50 py-6 md:py-12 bg-[#f9f7fa] ">
 			<div className="flex relative flex-col gap-6 md:gap-14 bg-[#09060E]  pt-6 pb-0 md:pt-12 md:pb-12 border rounded-4xl ">
 				<div className="hidden md:block absolute top-14 right-16">
-					<div className="relative">
+					{/* <div className="relative">
 						<div className="absolute top-0 left-20 right-10">
 							<div>
 								<Image
@@ -64,7 +66,66 @@ const Built: React.FC = () => {
 							height={218}
 							alt="bg"
 						/>
-					</div>
+					</div> */}
+					<motion.div
+						className="relative"
+						initial={{ x: -100, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ once: false, amount: 0.2 }}
+					>
+						<div className="absolute top-0 left-20 right-10">
+							<Image
+								src={"/images/home/built/frame1.png"}
+								width={49}
+								height={46}
+								alt="frame"
+							/>
+						</div>
+
+						<div className="absolute top-16 left-4 right-10">
+							<Image
+								src={"/images/home/built/frame2.png"}
+								width={64}
+								height={60}
+								alt="frame"
+							/>
+						</div>
+
+						<div className="absolute top-36 left-0 right-10">
+							<Image
+								src={"/images/home/built/frame3.png"}
+								width={49}
+								height={46}
+								alt="frame"
+							/>
+						</div>
+
+						<div className="absolute top-16 left-24 right-10">
+							<Image
+								src={"/images/home/built/frame4.png"}
+								width={49}
+								height={46}
+								alt="frame"
+							/>
+						</div>
+
+						<div className="absolute top-32 left-20 right-10">
+							<Image
+								src={"/images/home/built/frame5.png"}
+								width={37}
+								height={35}
+								alt="frame"
+							/>
+						</div>
+
+						<Image
+							src={"/images/home/built/bg1.png"}
+							width={205}
+							height={218}
+							alt="bg"
+						/>
+					</motion.div>
 				</div>
 				<div className="hidden md:block absolute top-44 right-0">
 					<Image
@@ -116,7 +177,7 @@ const Built: React.FC = () => {
 				</div>
 				<div className="md:hidden h-[250px] relative ">
 					<div className="absolute top-0 left-16 right-10">
-						<div className="relative">
+						{/* <div className="relative">
 							<div className="absolute top-0 left-20 right-10">
 								<div>
 									<Image
@@ -174,7 +235,66 @@ const Built: React.FC = () => {
 								height={218}
 								alt="bg1"
 							/>
-						</div>
+						</div> */}
+						<motion.div
+							className="relative"
+							initial={{ x: -100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{ duration: 1, ease: "easeOut" }}
+							viewport={{ once: false, amount: 0.2 }}
+						>
+							<div className="absolute top-0 left-20 right-10">
+								<Image
+									src={"/images/home/built/frame1.png"}
+									width={49}
+									height={46}
+									alt="frame"
+								/>
+							</div>
+
+							<div className="absolute top-16 left-4 right-10">
+								<Image
+									src={"/images/home/built/frame2.png"}
+									width={64}
+									height={60}
+									alt="frame"
+								/>
+							</div>
+
+							<div className="absolute top-36 left-0 right-10">
+								<Image
+									src={"/images/home/built/frame3.png"}
+									width={49}
+									height={46}
+									alt="frame"
+								/>
+							</div>
+
+							<div className="absolute top-16 left-24 right-10">
+								<Image
+									src={"/images/home/built/frame4.png"}
+									width={49}
+									height={46}
+									alt="frame"
+								/>
+							</div>
+
+							<div className="absolute top-32 left-20 right-10">
+								<Image
+									src={"/images/home/built/frame5.png"}
+									width={37}
+									height={35}
+									alt="frame"
+								/>
+							</div>
+
+							<Image
+								src={"/images/home/built/bg1.png"}
+								width={205}
+								height={218}
+								alt="bg1"
+							/>
+						</motion.div>
 					</div>
 					<div className="absolute bottom-12 right-0">
 						<div>
