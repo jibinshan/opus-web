@@ -175,36 +175,35 @@ const TrustedPartner = ({}) => {
     markerEnd="url(#arrow)"  // Arrow at the end of the path
   />
 
-  {/* <motion.circle
-    r="5"
-    fill="#A020F0"
-    animate={{
-      opacity: [1, 0.8, 1],
-    }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-  > */}
-	<motion.circle
-  r="5"
-  fill="#A020F0"
-  filter="drop-shadow(0px 0px 8px #A020F0)" // Electric glow effect
-  animate={{
-    opacity: [1, 0.8, 1],
-    scale: [1, 1.2, 1],
-    x: [0, -1, 1, -2, 2, 0], // Jitter effect
-    y: [0, 1, -1, 2, -2, 0], // Jitter effect
-  }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    ease: "easeInOut",
-    times: [0, 0.25, 0.5, 0.75, 1],
-  }}
->
-    <motion.animateMotion
+  <motion.circle
+   r="5"
+   fill="#A020F0"
+   animate={{
+	 opacity: [1, 0.8, 1],
+   }}
+   transition={{
+	 duration: 2,
+	 repeat: Infinity,
+	 ease: "easeInOut",
+   }}
+  >
+	<animateMotion
+	repeatCount="indefinite"
+	dur="4s"
+	path="
+	M596.5 0 
+	V54 
+	A20 20 0 0 1 576.5 74
+	H41 
+	A20 20 0 0 0 21 94
+	V178.541 
+	A20 20 0 0 0 41 198.541
+	H242.5"
+	keyTimes="0;0.5;1"
+	keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+	calcMode="spline"
+	></animateMotion>
+    {/* <motion.animateMotion
       repeatCount="indefinite"
       dur="4s"
       path="
@@ -219,7 +218,7 @@ const TrustedPartner = ({}) => {
       keyTimes="0;0.5;1"
       keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
       calcMode="spline"
-    />
+    /> */}
   </motion.circle>
 </svg>
 
@@ -339,7 +338,21 @@ const TrustedPartner = ({}) => {
     animate={{ opacity: [1, 0.8, 1] }}
     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
   >
-    <motion.animateMotion
+	<animateMotion repeatCount="indefinite" dur="4s" keyTimes="0;0.5;1"
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      calcMode="spline"
+	  path="
+        M396.843 1.5H557
+        A20 20 0 0 1 577 21
+        V119.503
+        A20 20 0 0 1 557 139.003
+        H24
+        A20 20 0 0 0 4 159.503
+        V215
+      "
+	  >
+	</animateMotion>
+    {/* <motion.animateMotion
       repeatCount="indefinite"
       dur="4s"
       path="
@@ -354,7 +367,7 @@ const TrustedPartner = ({}) => {
       keyTimes="0;0.5;1"
       keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
       calcMode="spline"
-    />
+    /> */}
   </motion.circle>
 </svg>
 
@@ -496,14 +509,22 @@ const TrustedPartner = ({}) => {
       ease: "easeInOut",
     }}
   >
-    <motion.animateMotion
+	<animateMotion
+	repeatCount="indefinite"
+	dur="3s"
+	path="M3 0 V132"
+	keyTimes="0;1"
+	keySplines="0.42 0 0.58 1"
+	calcMode="spline"
+	></animateMotion>
+    {/* <motion.animateMotion
       repeatCount="indefinite"
       dur="3s"
       path="M3 0 V132"
       keyTimes="0;1"
       keySplines="0.42 0 0.58 1"
       calcMode="spline"
-    />
+    /> */}
   </motion.circle>
 </svg>
 
